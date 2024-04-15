@@ -39,7 +39,15 @@ int main() {
 		{
 			biggest = mid - 0.01;
 		}
-
+	}
+	//deal with roundoff errors
+	while (work(lst, k, biggest+0.01))
+	{
+		biggest += 0.01;
+	}
+	while (!work(lst, k, biggest))
+	{
+		biggest -= 0.01;
 	}
 	cout << fixed << setprecision(2) << biggest << endl;
 }
