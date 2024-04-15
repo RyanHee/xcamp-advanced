@@ -2,39 +2,49 @@
 
 using namespace std;
 
-vector<int>parent;
-vector<int>depth_vector;
-unordered_map<int, int> root_c_depth_max;
+#define N 200000
 
-int opp(int p)
-{
-	for (auto it:root_c_depth_max)
-	{
-		if (p!=it.first)
-		{
-			return it.first;
+vector<int> tree[N];
+int height[N];
+int max_dist[N];
+
+void height_dfs(int curr, int p) {
+	
+	for (auto i : tree[curr]) {
+		if (i != p) {
+			height_dfs(i, curr);
+			height[curr]=max(height[i], height[curr]);
 		}
 	}
+	height[curr]++;
 }
 
-void dfs(vector<vector<int>>tree, int curr, int p, int depth)
-{
-	parent[curr] = p;
-	depth_vector[curr] = depth;
-	root_c_depth_max[p] = max(root_c_depth_max[p], depth);
-	for (int c:tree[curr])
-	{
-		dfs(tree, c, p, depth + 1);
+
+void dfs2(int curr, int parent) {
+	int max1 = 0;
+	int max2 = 0;
+	for (auto c : tree[curr]) {
+		if (c != parent) {
+			if (height[c] >= max1) {
+				max2 = max1;
+				max1 = height[c];
+			}
+			else if (height[c] > max2) {
+				max2 = height[c];
+			}
+		}
 	}
-}
 
-void update(vector<vector<int>>tree, int root)
-{
-	parent.resize(tree.size());
-	depth_vector.resize(tree.size());
-	for (int c:tree[root])
-	{
-		dfs(tree, c, c, 1);
+	for (auto c : tree[curr]) {
+		if (c != parent) {
+			if (max1 == height[c]) {
+				max_dist[c] = 1 + max(max_dist[curr], 1 + max2);
+			}
+			else {
+				max_dist[c] = 1 + max(max_dist[curr], 1 + max1);
+			}
+			dfs2(c, curr);
+		}
 	}
 }
 
@@ -43,48 +53,24 @@ int main()
 {
 	int n;
 	cin >> n;
-	vector<vector<int>>tree(n);
 	
-	int root;
-	vector<bool>find_root(n);
+	
 	for (int i=0;i<n-1;i++)
 	{
 		int a, b;
 		cin >> a >> b;
-		find_root[b-1] = true;
-		tree[a-1].push_back(b-1);
+		tree[a - 1].push_back(b - 1);
+		tree[b - 1].push_back(a - 1);
 	}
 
-	for (int i=0;i<n;i++)
-	{
-		if (!find_root[i])
-		{
-			root = i;
-			break;
-		}
-	}
-	//cout << root << endl;
-	update(tree, root);
-
-	for (int i=0;i<n;i++)
-	{
-		if (i==root)
-		{
-			//root
-			int result;
-			for (int c:tree[i])
-			{
-				result = max(root_c_depth_max[c], result);
-			}
-			cout << result << " ";
-		}
-		else
-		{
-			int result = max(root_c_depth_max[parent[i]] - depth_vector[i], depth_vector[i] + root_c_depth_max[opp(parent[i])]);
-			cout << result << " ";
-		}
+	
+	height_dfs(0, -1);
+	dfs2(0, -1);
+	for (int i = 0; i < n; i++) {
+		cout << max(max_dist[i], height[i]) - 1 << " ";
 	}
 	cout << endl;
+	
 
 	
 

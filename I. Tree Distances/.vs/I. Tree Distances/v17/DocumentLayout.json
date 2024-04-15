@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\RYAN\\programming\\xcamp-advanced\\I. Tree Distances\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC51DD8F-CDB2-4A9A-906E-693379D300D8}|I. Tree Distances.vcxproj|D:\\RYAN\\programming\\xcamp-advanced\\I. Tree Distances\\I. Tree Distances.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BC51DD8F-CDB2-4A9A-906E-693379D300D8}|I. Tree Distances.vcxproj|solutionrelative:I. Tree Distances.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "I. Tree Distances.cpp",
+              "DocumentMoniker": "D:\\RYAN\\programming\\xcamp-advanced\\I. Tree Distances\\I. Tree Distances.cpp",
+              "RelativeDocumentMoniker": "I. Tree Distances.cpp",
+              "ToolTip": "D:\\RYAN\\programming\\xcamp-advanced\\I. Tree Distances\\I. Tree Distances.cpp",
+              "RelativeToolTip": "I. Tree Distances.cpp",
+              "ViewState": "AQIAADQAAAAAAAAAAAAowE4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-15T14:51:32.842Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
