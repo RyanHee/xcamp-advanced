@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\RYAN\\programming\\xcamp-advanced\\J. Shortest routes II\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C83A9F0-EBC1-4F83-9449-8ACD8842AB4D}|J. Shortest routes II\\J. Shortest routes II.vcxproj|D:\\RYAN\\programming\\xcamp-advanced\\J. Shortest routes II\\J. Shortest routes II\\J. Shortest routes II.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3C83A9F0-EBC1-4F83-9449-8ACD8842AB4D}|J. Shortest routes II\\J. Shortest routes II.vcxproj|solutionrelative:J. Shortest routes II\\J. Shortest routes II.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "J. Shortest routes II.cpp",
+              "DocumentMoniker": "D:\\RYAN\\programming\\xcamp-advanced\\J. Shortest routes II\\J. Shortest routes II\\J. Shortest routes II.cpp",
+              "RelativeDocumentMoniker": "J. Shortest routes II\\J. Shortest routes II.cpp",
+              "ToolTip": "D:\\RYAN\\programming\\xcamp-advanced\\J. Shortest routes II\\J. Shortest routes II\\J. Shortest routes II.cpp",
+              "RelativeToolTip": "J. Shortest routes II\\J. Shortest routes II.cpp",
+              "ViewState": "AQIAABEAAAAAAAAAAAAUwEsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-16T13:06:44.135Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
