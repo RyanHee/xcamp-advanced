@@ -1,0 +1,20 @@
+Time  limit: 0.2s   Memory limit: 32M
+Description:
+There are N ropes, each with a length of Li, and you need to cut out K ropes of the same length from them. What is the possible longest length for each of these K ropes? Please round your answer to the nearest hundredth. For example, for 1.357785, please output 1.35.
+
+Input format:
+In the first line, there are two integers, N and K
+
+In the second line, there are N floating-point numbers Li (i from 1 to N).
+
+Output format:
+Output the longest possible length of the K ropes that can be cut out from the input ropes. 
+
+Sample input:
+4 11
+8.02 7.43 4.57 5.39
+Sample output:
+2.00
+Notes:
+
+1<=N<=10000, 1<=K<=10000, 1<=Li<=100000

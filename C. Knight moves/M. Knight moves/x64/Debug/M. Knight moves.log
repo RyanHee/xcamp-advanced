@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\RYAN\xcamp\M. Knight moves\main.cpp(57,1): warning C4715: “solve”: 不是所有的控件路径都返回值
+  M. Knight moves.vcxproj -> D:\RYAN\xcamp\M. Knight moves\x64\Debug\M. Knight moves.exe
